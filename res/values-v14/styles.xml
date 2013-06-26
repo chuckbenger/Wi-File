@@ -1,0 +1,64 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo">
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_sync_style</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu.Sync_style</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Sync_style</item>
+        <item name="android:actionBarTabStyle">@style/ActionBarTabStyle.Sync_style</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Sync_style</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Transparent.Sync_style</item>
+        <item name="android:actionModeBackground">@drawable/cab_background_top_sync_style</item>
+        <item name="android:actionModeSplitBackground">@drawable/cab_background_bottom_sync_style</item>
+        <item name="android:actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Sync_style</item>
+
+    </style>
+
+    <style name="ActionBar.Solid.Sync_style" parent="@android:style/Widget.Holo.ActionBar.Solid">
+        <item name="android:background">@drawable/ab_solid_sync_style</item>
+        <item name="android:backgroundStacked">@drawable/ab_stacked_solid_sync_style</item>
+        <item name="android:backgroundSplit">@drawable/ab_bottom_solid_sync_style</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Sync_style</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Sync_style" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_sync_style</item>
+        <item name="android:progressBarStyle">@style/ProgressBar.Sync_style</item>
+    </style>
+
+    <style name="PopupMenu.Sync_style" parent="@android:style/Widget.Holo.ListPopupWindow">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_sync_style</item>
+    </style>
+
+    <style name="DropDownListView.Sync_style" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_sync_style</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Sync_style" parent="@android:style/Widget.Holo.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_sync_style</item>
+    </style>
+
+    <style name="DropDownNav.Sync_style" parent="@android:style/Widget.Holo.Spinner">
+        <item name="android:background">@drawable/spinner_background_ab_sync_style</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_sync_style</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_sync_style</item>
+    </style>
+
+    <style name="ProgressBar.Sync_style" parent="@android:style/Widget.Holo.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_sync_style</item>
+    </style>
+
+    <style name="ActionButton.CloseMode.Sync_style" parent="@android:style/Widget.Holo.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_sync_style</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Sync_style.Widget" parent="@android:style/Theme.Holo">
+        <item name="android:popupMenuStyle">@style/PopupMenu.Sync_style</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Sync_style</item>
+    </style>
+</resources>
